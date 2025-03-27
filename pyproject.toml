@@ -1,0 +1,37 @@
+[project]
+name = "tkintergalactic"
+version = "0.0.1"
+description = "Delarative Tcl/Tk"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+keywords = ["TCL", "TK", "UI"]
+authors = [
+  {name = "Oliver Russell", email = "ojhrussell@gmail.com"},
+]
+maintainers = [
+  {name = "Oliver Russell", email = "ojhrussell@gmail.com"},
+]
+classifiers = [
+  "Programming Language :: Python",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.5",
+  "ruff==0.11.2",
+  "mypy==1.15.0",
+  "ocdiff==0.0.33",
+  "rich==14.0.0",
+]
+
+[project.urls]
+homepage = "https://leontrolski.github.io/"
+
+[tool.ruff]
+line-length = 120
+
+[tool.mypy]
+strict = true
